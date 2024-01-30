@@ -11137,12 +11137,25 @@ html {
 
 /* CSS for education item descriptions */
 .education-description {
-    padding: 10px; /* Add padding to descriptions */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+.education-description p {
+    margin: 0; /* Remove default margins */
+    text-align: center;
 }
 
 /* Media query for small screens (e.g., mobile devices) */
 @media screen and (max-width: 767px) {
     .education-item {
         width: 100%; /* Items take full width on small screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .education-item img {
+        max-width: 70%; /* Adjust the percentage as needed */
+        margin: 0 auto; /* Center the image horizontally */
+        display: block; /* Ensure the image is centered properly */
     }
 }
